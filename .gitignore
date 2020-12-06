@@ -6,3 +6,10 @@ node_modules
 
 # ignore vscode 
 .vscode/
+
+# ignore build files
+build/**
+
+# add in config files
+!build/node-extension.webpack.config.js
+!build/views.webpack.config.js
