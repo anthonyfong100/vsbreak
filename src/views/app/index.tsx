@@ -2,8 +2,9 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import './index.css';
+import { app as App } from './components/App';
 
 ReactDOM.render(
-  <h1>Hello</h1>,
+  <App />,
   document.getElementById('root')
 );

@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
 	let disposable = vscode.commands.registerCommand('vsbreak.startBreak', () => {
 		vscode.window.showInformationMessage('Enjoy your break!');
 
-		const reactApp = new viewLoader();
+		const reactApp = new viewLoader(context.extensionPath);
 		context.subscriptions.push(disposable);
 	});
 }
