@@ -4,6 +4,7 @@ module.exports = {
   entry: {
     app: "./src/views/app/index.tsx"
   },
+  watch: true,
   output: {
     path: path.resolve(__dirname, "vsBreak"),
     filename: "[name].js"
