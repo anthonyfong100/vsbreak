@@ -23,8 +23,8 @@
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run package",
-		"compile": "npm-run-all compile:*",
-		"watch": "npm-run-all watch:*",
+		"compile": "npm-run-all -p compile:*",
+		"watch": "npm-run-all -p watch:*",
 		"compile:views": "webpack --mode development --config ./build/views.webpack.config.js",
 		"compile:extension": "webpack --devtool nosources-source-map --config ./build/node-extension.webpack.config.js",
 		"watch:views": "webpack --watch --mode development --config ./build/views.webpack.config.js",
